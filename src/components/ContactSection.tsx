@@ -24,7 +24,7 @@ const CHANNELS = [
   icon: MailIcon,
   label: 'Email',
   value: 'obiekwekosi32@gmail.com',
-  href: 'obiekwekosi32@gmail.com'
+  href: 'mailto:obiekwekosi32@gmail.com'
 },
 {
   icon: LinkedinIcon,
@@ -122,7 +122,7 @@ export function ContactSection() {
 
             })}
             <a
-              href='/public/resume.pdf' download="Maureen_Obiekwe_cv"
+              href='/resume.pdf' download="Maureen_Obiekwe_cv"
               className="flex items-center justify-center gap-2 rounded-2xl bg-charcoal dark:bg-white px-4 py-4 text-sm font-semibold text-white dark:text-charcoal transition-transform hover:-translate-y-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-brown">
               
               <DownloadIcon className="h-4 w-4" />
