@@ -132,7 +132,7 @@ export function ArtifactsShowcase() {
             variants={{
               hidden: {
                 opacity: 0,
-                y: 24
+                y: 10
               },
               show: {
                 opacity: 1,

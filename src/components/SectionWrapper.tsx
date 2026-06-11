@@ -1,5 +1,4 @@
 import { ReactNode } from 'react';
-import { motion } from 'framer-motion';
 interface SectionWrapperProps {
   id: string;
   children: ReactNode;
@@ -13,29 +12,13 @@ export function SectionWrapper({
   ariaLabel
 }: SectionWrapperProps) {
   return (
-    <motion.section
+    <section
       id={id}
       aria-label={ariaLabel}
-      initial={{
-        opacity: 0,
-        y: 32
-      }}
-      whileInView={{
-        opacity: 1,
-        y: 0
-      }}
-      viewport={{
-        once: true,
-        margin: '-80px'
-      }}
-      transition={{
-        duration: 0.6,
-        ease: [0.22, 1, 0.36, 1]
-      }}
-      className={`w-full ${className}`}>
+      className={`w-full overflow-hidden ${className}`}>
       
       {children}
-    </motion.section>);
+    </section>);
 
 }
 interface SectionHeadingProps {

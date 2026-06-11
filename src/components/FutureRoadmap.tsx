@@ -88,14 +88,14 @@ export function FutureRoadmap() {
                 variants={{
                   hidden: {
                     opacity: 0,
-                    y: 24
+                    y: 10
                   },
                   show: {
                     opacity: 1,
                     y: 0
                   }
                 }}
-                className="relative rounded-2xl border border-charcoal/5 dark:border-white/10 bg-softgray dark:bg-white/5 p-5 transition-transform hover:-translate-y-1">
+                className="relative rounded-2xl border border-charcoal/5 dark:border-white/10 bg-softgray dark:bg-white/5 p-5 transition-transform sm:hover:-translate-y-1">
                 
                 <span className="absolute right-4 top-4 font-heading text-xs font-bold text-brown/40">
                   {String(i + 1).padStart(2, '0')}
@@ -115,5 +115,4 @@ export function FutureRoadmap() {
         </motion.ol>
       </div>
     </SectionWrapper>);
-
 }

@@ -121,14 +121,14 @@ export function CriticalDiscoveries() {
                 variants={{
                   hidden: {
                     opacity: 0,
-                    y: 24
+                    y: 10
                   },
                   show: {
                     opacity: 1,
                     y: 0
                   }
                 }}
-                className="flex flex-col rounded-2xl border border-charcoal/5 dark:border-white/10 bg-softgray dark:bg-white/5 p-6 shadow-soft transition-transform hover:-translate-y-1">
+                className="flex flex-col rounded-2xl border border-charcoal/5 dark:border-white/10 bg-softgray dark:bg-white/5 p-6 shadow-soft transition-transform sm:hover:-translate-y-1">
                 
                 <div className="flex items-start justify-between">
                   <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-white dark:bg-white/10 text-brown shadow-soft">
