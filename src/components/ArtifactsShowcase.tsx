@@ -1,4 +1,3 @@
-import { motion } from 'framer-motion';
 import { ExternalLinkIcon } from 'lucide-react';
 import { SectionWrapper, SectionHeading } from './SectionWrapper';
 interface Artifact {
@@ -111,34 +110,12 @@ export function ArtifactsShowcase() {
           subtitle="The deliverables behind each stage — from planning documents to CI automation workflows." />
         
 
-        <motion.div
-          initial="hidden"
-          whileInView="show"
-          viewport={{
-            once: true
-          }}
-          variants={{
-            show: {
-              transition: {
-                staggerChildren: 0.06
-              }
-            }
-          }}
+        <div
           className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           
           {ARTIFACTS.map((a) =>
-          <motion.article
+          <article
             key={a.title}
-            variants={{
-              hidden: {
-                opacity: 0,
-                y: 10
-              },
-              show: {
-                opacity: 1,
-                y: 0
-              }
-            }}
             className="flex flex-col rounded-2xl border border-charcoal/5 dark:border-white/10 bg-white dark:bg-white/5 p-6 shadow-soft transition-transform sm:hover:-translate-y-1">
             
               <span className="self-start rounded-full bg-sand/30 px-2.5 py-1 text-xs font-semibold text-brown">
@@ -170,9 +147,9 @@ export function ArtifactsShowcase() {
                 View Artifact
                 <ExternalLinkIcon className="h-4 w-4" />
               </a>
-            </motion.article>
+            </article>
           )}
-        </motion.div>
+        </div>
       </div>
     </SectionWrapper>);
 

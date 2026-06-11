@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { ThemeProvider } from './context/ThemeContext';
-import { ScrollProgress } from './components/ScrollProgress';
+//import { ScrollProgress } from './components/ScrollProgress';
 import { Navbar } from './components/Navbar';
 import { HeroSection } from './components/HeroSection';
 import { AboutSection } from './components/AboutSection';
@@ -36,7 +36,7 @@ export function App() {
   return (
     <ThemeProvider>
       <div className="min-h-screen w-full bg-white font-body text-charcoal dark:bg-charcoal dark:text-white">
-        <ScrollProgress />
+        {/*<ScrollProgress /> */}
         <Navbar />
         <main>
           <HeroSection />

@@ -53,7 +53,7 @@ export function Navbar() {
     <header className="fixed inset-x-0 top-0 z-50">
       <nav
         aria-label="Primary"
-        className="mx-auto mt-3 flex max-w-6xl items-center justify-between rounded-2xl border border-white/40 dark:border-white/10 bg-white/70 dark:bg-charcoal/70 px-4 py-2.5 shadow-soft backdrop-blur-xl sm:px-6">
+        className="mx-auto mt-3 flex max-w-6xl items-center justify-between rounded-2xl border border-white/40 dark:border-white/10 bg-white/70 dark:bg-charcoal/70 px-4 py-2.5 shadow-soft sm:px-6">
         
         <button
           onClick={() => handleNav('home')}
@@ -131,7 +131,7 @@ export function Navbar() {
           transition={{
             duration: 0.2
           }}
-          className="mx-auto mt-2 max-w-6xl rounded-2xl border border-white/40 dark:border-white/10 bg-white/90 dark:bg-charcoal/90 p-3 shadow-soft backdrop-blur-xl lg:hidden">
+          className="mx-auto mt-2 max-w-6xl rounded-2xl border border-white/40 dark:border-white/10 bg-white/90 dark:bg-charcoal/90 p-3 shadow-soft lg:hidden">
           
             <ul className="grid grid-cols-2 gap-1">
               {NAV_ITEMS.map((item) =>
