@@ -1,4 +1,3 @@
-import { motion } from 'framer-motion';
 import {
   TargetIcon,
   AwardIcon,
@@ -65,36 +64,14 @@ export function FutureRoadmap() {
           subtitle="A deliberate path from QA Engineer toward leading test automation for API-first products." />
         
 
-        <motion.ol
-          initial="hidden"
-          whileInView="show"
-          viewport={{
-            once: true
-          }}
-          variants={{
-            show: {
-              transition: {
-                staggerChildren: 0.07
-              }
-            }
-          }}
+        <ol
           className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           
           {GOALS.map((g, i) => {
             const Icon = g.icon;
             return (
-              <motion.li
+              <li
                 key={g.title}
-                variants={{
-                  hidden: {
-                    opacity: 0,
-                    y: 10
-                  },
-                  show: {
-                    opacity: 1,
-                    y: 0
-                  }
-                }}
                 className="relative rounded-2xl border border-charcoal/5 dark:border-white/10 bg-softgray dark:bg-white/5 p-5 transition-transform sm:hover:-translate-y-1">
                 
                 <span className="absolute right-4 top-4 font-heading text-xs font-bold text-brown/40">
@@ -109,10 +86,10 @@ export function FutureRoadmap() {
                 <p className="mt-1 text-sm text-charcoal/55 dark:text-white/55">
                   {g.note}
                 </p>
-              </motion.li>);
+              </li>);
 
           })}
-        </motion.ol>
+        </ol>
       </div>
     </SectionWrapper>);
 }
