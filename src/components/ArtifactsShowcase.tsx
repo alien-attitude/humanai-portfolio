@@ -116,7 +116,7 @@ export function ArtifactsShowcase() {
           {ARTIFACTS.map((a) =>
           <article
             key={a.title}
-            className="flex flex-col rounded-2xl border border-charcoal/5 dark:border-white/10 bg-white dark:bg-white/5 p-6 shadow-soft transition-transform sm:hover:-translate-y-1">
+            className="flex flex-col rounded-2xl border border-charcoal/5 dark:border-white/10 bg-white dark:bg-white/5 p-6 sm:shadow-soft transition-transform sm:hover:-translate-y-1">
             
               <span className="self-start rounded-full bg-sand/30 px-2.5 py-1 text-xs font-semibold text-brown">
                 {a.category}
