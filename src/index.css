@@ -23,6 +23,32 @@ body {
 #root{
   overflow-x: hidden;
 }
+
+@media (max-width: 767px) {
+  #artifacts,
+  #future {
+    position: relative;
+    isolation: isolate;
+    transform: translateZ(0);
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+  }
+
+  #artifacts article,
+  #future li {
+    transform: translateZ(0);
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    will-change: auto;
+    transition: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html{
+    scroll-behavior: auto;
+  }
+}
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Poppins', ui-sans-serif, system-ui, sans-serif;
 }
